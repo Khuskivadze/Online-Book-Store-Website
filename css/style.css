@@ -655,3 +655,64 @@ section{
 /* <!--footer sections is start--> */
 
  
+.cart{
+    width: 25%;
+    height: 100vh;
+    background: rgba(255, 255, 255,.9);
+    color: var(--blue);
+    top: 0;
+    right: -105%;
+    z-index: 1000;   
+    position: fixed;
+    
+     
+    
+}
+.cart.active{
+    right: 0;
+}
+
+.cart h1{
+    text-align: center;
+    margin-top: 10rem;
+    border: 2px solid var(--dark-color);
+    font-size: 4rem;
+}
+#close-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.favorites{
+    width: 25%;
+    height: 100vh;
+    background: rgba(255, 255, 255,.9);
+    color: var(--blue);
+    top: 0;
+    right: -105%;
+    z-index: 1000;   
+    position: fixed;
+    
+     
+    
+}
+.favorites.active{
+    right: 0;
+}
+
+.favorites h1{
+    text-align: center;
+    margin-top: 10rem;
+    border: 2px solid var(--dark-color);
+    font-size: 4rem;
+}
+#close-favorites-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--blue);
+    cursor: pointer;
+}

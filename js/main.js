@@ -174,4 +174,34 @@ var swiper = new Swiper(".blogs-slider", {
     },
   },
 });
+
+// cartOpen
+let cartOpen = document.querySelector('.cart')
+document.querySelector('#cart-btn').onclick  = () => {
+    cartOpen.classList.toggle('active')
+}
+document.querySelector('#close-btn').onclick  = () => {
+    cartOpen.classList.remove('active')
+}
+// cartOpen
+
+
+
+
+// favOpen
+let favOpen = document.querySelector('.favorites')
+document.querySelector('#favorites-btn').onclick  = () => {
+    favOpen.classList.toggle('active')
+}
+document.querySelector('#close-favorites-btn').onclick  = () => {
+   favOpen.classList.remove('active')
+}
+// favOpen
+
+
+ 
+
+
+
+ 
  
