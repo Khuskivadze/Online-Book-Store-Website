@@ -61,7 +61,7 @@ var swiper  =  new Swiper(".books-slider", {
 // book slider 
 // feature book slider 
 var swiper  =  new Swiper(".feature-slider", {
-   
+  spaceBetween: 10,
   loop:true,
   centeredSlider:true,
   autoplay:{
@@ -90,3 +90,54 @@ var swiper  =  new Swiper(".feature-slider", {
   }
 })
 // feature book slider 
+// Arrivals book slider 
+var swiper  =  new Swiper(".arrivals-slider", {
+  spaceBetween: 10,
+  loop:true,
+  centeredSlider:true,
+  autoplay:{
+   delay:9500,
+   disableOnInteraction:false,
+  },
+  breakpoints : {
+    0: {
+      slidesPerView: 1,
+     
+    },
+  
+    768: {
+      slidesPerView: 2,
+       
+    },
+    1024: {
+      slidesPerView:  3,
+    }
+  }
+})
+// Arrivals book slider 
+// revievs slider
+var swiper  =  new Swiper(".reviews-slider", {
+  spaceBetween: 10,
+  grabCursor:true,
+  loop:true,
+  centeredSlider:true,
+  autoplay:{
+   delay:9500,
+   disableOnInteraction:false,
+  },
+  breakpoints : {
+    0: {
+      slidesPerView: 1,
+     
+    },
+  
+    768: {
+      slidesPerView: 2,
+       
+    },
+    1024: {
+      slidesPerView:  3,
+    }
+  }
+})
+// revievs slider

@@ -416,15 +416,151 @@ section{
   color: white;
 }
 
-
-
 /* <!--feature sections is end--> */
+/* <!--Newsletter sections is start--> */
+.newsletter{
+    background: url(../images/letter-bg.jpg);
+    background-size:cover ;
+    background-position:center ;
+    background-attachment: fixed;
+}
+.newsletter form{
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+.newsletter form h3{
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom:.5rem ;
+    font-weight: normal;
+}
+.newsletter form .box{
+     width: 100%;
+     margin: .7rem 0;
+     padding: 1rem 1.2rem;
+     font-size: 1.6rem;
+     color: var(--black);
+     border-radius: .5rem;
+     text-transform: none;
+}
+/* <!--Newsletter sections is End--> */
+
+/* <!--arrivals sections is start--> */
+.arivals .arrivals-slider .box{
+    display: flex;
+    align-items:center;
+    gap:1.5rem;
+    padding:2rem 1rem;
+    border:var(--border);
+    margin:1rem 0;
+
+}
+.arivals .arrivals-slider .box:hover{
+    border: var(--border-hover);
+}
+.arivals .arrivals-slider .box .image img{
+    height: 15rem;
+}
+.arivals .arrivals-slider .box .content h3{
+    font-size: 2.3rem;
+    color: var(--black);
+}
+.arivals .arrivals-slider .box .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.arivals .arrivals-slider .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+   text-decoration: line-through;
+}
+.arivals .arrivals-slider .box .content .stars i{
+    font-size: 1.5rem;
+    color: var(--blue);
+}
  
+/* <!--arrivals sections is End--> */
 
+/* <!--deal sections is start--> */
+.deal{
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
 
+.deal .content{
+    flex:1 1 42rem;
+    margin-left: 17rem;
+}
+
+.deal .image{
+    flex:.5 1 50rem;
+    margin-right: 12rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+/* <!--deal sections is End--> */
+/* <!--reviews sections is start-->   */
 
  
+.reviews .reviews-slider .box{
+   
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+.reviews .reviews-slider .box:hover{
+    border: var(--border-hover);
 
+}
+.reviews .reviews-slider .box img{
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews .reviews-slider .wrap .box  h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+.reviews .reviews-slider .wrap .box  p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.reviews .reviews-slider .wrap .box .stars i{
+    color: var(--blue);
+    font-size: 1.7rem;
+}
+
+/* <!--reviews sections is eND-->   */
 
 
 
