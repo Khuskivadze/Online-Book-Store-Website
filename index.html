@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--media queer css -->
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
 <body>
@@ -31,8 +32,9 @@
            <a href="#" class="fas fa-heart" id="favorites-btn"></a>
            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
            <div id="login-btn" class="fas fa-user"></div>
-
         </div>
+
+
     </div>
 
     <div class="header-2">
@@ -47,10 +49,21 @@
       
 </header>
 <!--header sections is end-->
-<div class="cart">
+<div class="cart" id="cart">
     <div id="close-btn" class="fas fa-times"></div>
-    <h1>Cart</h1>
-</div>
+     <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+         
+        
+     
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    </div> 
+    <button type="button" class="btn-buy">Buy now</button> 
+     
+</div> 
 <div class="favorites">
     <h1>Favorites</h1>
     <div id="close-favorites-btn" class="fas fa-times"></div>
@@ -144,155 +157,156 @@
 <section class="featured" id="featured">
     <h1 class="heading"><span>featura books</span></h1>
     <div class=" swiper feature-slider">
-        <div class="swiper-wrapper">
-            <div class=" swiper-slide box">
+        <div class="swiper-wrapper shop-content">
+            <div class=" swiper-slide box product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-1.jpg" alt="">
+                    <img src="images/book-1.jpg" class="product-image" alt="">
                 </div>
-                <div class="content">
-                    <h3>Feature books</h3>
+                <div class="content ">
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart "> Add to cart</a>
+                    
                 </div>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-2.jpg" alt="">
+                    <img src="images/book-2.jpg" class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-3.jpg" alt="">
+                    <img src="images/book-3.jpg" class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-4.jpg" alt="">
+                    <img src="images/book-4.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-5.jpg" alt="">
+                    <img src="images/book-5.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-6.jpg" alt="">
+                    <img src="images/book-6.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-7.jpg" alt="">
+                    <img src="images/book-7.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-8.jpg" alt="">
+                    <img src="images/book-8.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-9.jpg" alt="">
+                    <img src="images/book-9.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a  class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
-            <div class=" swiper-slide box">
+            <div class=" swiper-slide box  product-box">
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-heart"></i></a>
                     <a href="#"><i class="fas fa-eye"></i></a>
                 </div>
                 <div class="image">
-                    <img src="images/book-10.jpg" alt="">
+                    <img src="images/book-10.jpg"  class=" product-image" alt="">
                 </div>
                 <div class="content">
-                    <h3>Feature books</h3>
+                    <h3 class="product-title">Feature books</h3>
                     <div class="price">$15.99 <span>$20.00</span></div>
-                    <a href="#" class="btn"> Add to cart</a>
+                    <a class="btn add-cart"> Add to cart</a>
                 </div>
             </div>
         </div>
@@ -861,9 +875,10 @@
 
 
  
-
-
+ 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/app.js"></script>
+ 
 </body>
 </html>
