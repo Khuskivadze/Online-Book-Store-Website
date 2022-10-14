@@ -21,13 +21,27 @@ function ready () {
         input.addEventListener("change", quantityChanged)
     }
 
-     //add to cart
+
+    //add to cart
      var addCart = document.getElementsByClassName("add-cart");
      for (var i = 0; i < addCart.length; i++){
          var button = addCart[i];
          button.addEventListener("click", addCartClicked)
-     }
+    }
+
+     //buy button wor
+     document.getElementsByClassName ('btn-buy')[0].addEventListener('click', buyButtonClicked);
 }
+// Buy Button
+function buyButtonClicked() {
+    alert('your order is placed')
+    var cartContent = document.getElementsByClassName('cart-content')[0]
+    while (cartContent.hasChildNodes()){
+        cartContent.removeChild(cartContent.firstChild);
+    }
+    updatetotal()
+}
+
 
 
 
@@ -51,7 +65,7 @@ function addCartClicked (event) {
     var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
      var price = shopProducts.getElementsByClassName("price")[0].innerText;
-    var productimg = shopProducts.getElementsByClassName("product-image").src;
+    var productimg = shopProducts.getElementsByClassName("product-image").src
     
     addProductToCart(title, price,productimg);
     updatetotal();
@@ -78,7 +92,7 @@ function addProductToCart (title, price, productImg) {
  var cartBoxContent = ` <img src="${productImg}"  class="cart-image" alt="">
                         <div class="detail-box">
                         <div class="cart-product-title"> ${title}</div>
-                        <div class="cart-price">${price}}</div>
+                        <div class="cart-price">${price}</div>
                         <input type="number" value="1" class="cart-quantity">
                         </div>
                         <i class="bi bi-trash3-fill cart-remove"></i>`
